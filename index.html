@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Sidebar Navigation</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+   <section class="hero">
+      <h1>TASK 1</h1>
+    </section>
+  <!-- Sidebar Navigation -->
+  <header id="navbar">
+    <div class="logo">SKILL CRAFT</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Toggle -->
+  <button class="mobile-toggle" id="toggleBtn">☰</button>
+
+  <!-- Page Content -->
+  <main class="main-content">
+    <section class="hero">
+      <h1>Welcome to My Responsive Landing Page</h1>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    const toggleBtn = document.getElementById('toggleBtn');
+const navbar = document.getElementById('navbar');
+
+toggleBtn.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+
+  </script>
+</body>
+</html>
